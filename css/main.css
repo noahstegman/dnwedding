@@ -215,10 +215,12 @@ h3{
 
 .reg_a{
   border-bottom: #333 1px solid;
+  transition: .3s color linear;
 }
 
-#sptus{
-  
+.reg_a:hover{
+  color: rgb(27, 27, 81);
+  font-weight: 300;
 }
 
 h5{
