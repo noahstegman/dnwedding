@@ -17,6 +17,7 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  scroll-behavior: smooth;
 }
 html,body{
   height: 100%;
@@ -98,7 +99,7 @@ small{
 }
 
 .op1{
-  background: url(../img/dn_main.JPG) no-repeat center center fixed; 
+  background: url(../img/dn_main.JPG) no-repeat center center; 
   height: 100%;
   width: 100%;
   -webkit-background-size: cover;
