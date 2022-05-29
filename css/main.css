@@ -165,12 +165,12 @@ h3{
 }
 
 .pic1{
-  background: url("../img/dn_swiss.JPG") no-repeat center center fixed; 
+  background: url("../img/dn_swiss.jpg") no-repeat center center fixed; 
   background-size: cover;
 }
 
 .pic2{
-  background: url("../img/dn_dl.JPG") no-repeat center center fixed; 
+  background: url("../img/dn_dl.jpg") no-repeat center center fixed; 
   background-size: cover;
 }
 
@@ -284,7 +284,7 @@ label{
 }
 
 #contact_container{
-  background: url("../img/wedding_form.JPG") no-repeat center center fixed; 
+  background: url("../img/wedding_form.jpg") no-repeat center center fixed; 
 }
 
 .tn{
