@@ -41,7 +41,7 @@ p{
   margin: 0 auto;
   font-family: 'Dancing Script', cursive;
   font-weight: 700;
-  font-size: calc(2.5vw + 30px);
+  font-size: calc(3.5vw + 20px);
   color: #F9F9F9;
 }
 #jackson{
@@ -116,6 +116,9 @@ small{
   width: 100%;
   height: 100%;
   background: url(../img/wedding_4.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 
@@ -270,7 +273,8 @@ h5{
 .email_form{
   margin-bottom: 30px;
   margin-top: 10px;
-  width: 350px;
+  width: 100%;
+  max-width: 600px;
   height: 40px;
   font-family: 'Roboto Flex', sans-serif;
   font-size: 15px;
@@ -280,7 +284,7 @@ h5{
 }
 
 label{
-  width: 400px;
+  width: 100%;
   height: 125px;
   display: inline-block;
 }
