@@ -30,19 +30,23 @@ p{
   font-size: calc(1.5vw + 10px);
   font-weight: 400;
 }
+
+#intro{
+  display: flex;
+}
 .title_cont{
   z-index: 10;
   text-align: center;
   border: 1px solid #CFCFCF;
-  padding: 25px;
+  padding: 75px;
   border-radius: 5px;
   background-color: rgba(0,0,0,0.15);
-  max-width: 800px;
+  max-width: 1000px;
   min-width: 200px;
   margin: 0 auto;
   font-family: 'Dancing Script', cursive;
   font-weight: 700;
-  font-size: calc(3.5vw + 20px);
+  font-size: calc(3.4vw + 20px);
   color: #F9F9F9;
 }
 
@@ -51,14 +55,25 @@ p{
   float: right;
   font-family: Arial, Helvetica, sans-serif;
 }
-.rsvp{
+
+.nav_wrap{
+  margin-top: 30px;
   height: 60px;
-  width: 200px;
+  max-width: 1000px;
+  min-width: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.rsvp{
   background-color: rgba(0,0,0,0.15);
-  margin: 20px auto;
   border-radius: 4px;
   text-align: center;
   line-height: 60px;
+  min-width: 300px;
+  width: 20%;
+  width: 70%;
   color: #C9C9C9;
   font-size: 30px;
   font-family: 'Dancing Script', cursive;
@@ -267,6 +282,17 @@ h5{
     flex-direction: column-reverse;
   }
 
+  .title_cont{
+    padding: 25px;
+  }
+
+  .nav_spacer{
+    height: 500px;
+  }
+  .nav_wrap{
+    margin-bottom: 15px;
+  }
+
 }
 
 .vsm{
@@ -314,17 +340,19 @@ label{
 }
 
 .submit_form{
-  width: 70%;
+  max-width: 600px;
+  width: 100%;
   height: 60px;
-  background-color: #777;
+  background-color: rgba(194, 140, 140, 0.486);
   border: none;
-  color: white;
+  color: #444;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-family: 'Roboto Flex', sans-serif;
-  font-weight: 500;
-  letter-spacing: 10px;
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  letter-spacing: 15px;
   transition: all linear .1s;
   border-radius: 15px;
   transition: .15s linear all;
@@ -332,7 +360,7 @@ label{
 .submit_form:hover{
   transform: scale(1.05);
   cursor: pointer;
-  background-color: #A9A9A9;
+  background-color: rgba(194, 140, 140, 0.9);
 }
 .rsvp_wrap{
   width: 80%;
