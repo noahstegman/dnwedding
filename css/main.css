@@ -11,305 +11,234 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-   @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&family=Montserrat:wght@100;200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&family=Montserrat:wght@100;200;300&display=swap');
 
 html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
   scroll-behavior: smooth;
 }
 html,body{
   height: 100%;
   width: 100%;
 }
-p{
-  margin: 0;
+.section{
+  width: 100%;
+  height: 100%;
 }
-#date{
-  margin-top: 50px;
-  font-size: calc(1.1vw + 25px);
-  font-family: 'Montserrat', sans-serif;
-  text-transform: uppercase;
-  border-bottom: 1px solid #AFAFAF;
-  width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: -50px;
-  font-weight: 100;
-}
-
-#intro{
+.flex_wrap{
+  width: 100%;
+  height: 100%;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-.title_cont{
-  z-index: 10;
-  text-align: center;
-  border: 1px solid #CFCFCF;
-  padding: 75px;
-  border-radius: 5px;
-  background-color: rgba(0,0,0,0.15);
-  max-width: 1000px;
-  min-width: 200px;
-  margin: 0 auto;
-  font-family: 'Dancing Script', cursive;
-  font-weight: 700;
-  font-size: calc(3vw + 30px);
-  color: #F9F9F9;
-}
-
-#jackson{
-  font-size: 9px;
-  float: right;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.nav_wrap{
-  margin-top: 30px;
-  height: 60px;
-  max-width: 1000px;
-  min-width: 200px;
+.flex_content_wrap{
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
 }
-
-.rsvp{
-  background-color: rgba(0,0,0,0.15);
-  border-radius: 4px;
+#registry_wrap, #details_wrap{
+  background-color: #E9F4FB;
+}
+#bg1{
+  background: url(../img/dn_swiss.JPG) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#bg2{
+  background: url(../img/dn_dl.JPG) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.content_title{
   text-align: center;
-  line-height: 60px;
-  min-width: 300px;
-  width: 20%;
-  width: 70%;
-  color: #C9C9C9;
-  letter-spacing: 8px;
-  font-size: 40px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 200;
-  border: 1px #CFCFCF solid;
-  transition: all .2s linear;
-}
-a{
-  color: inherit;
-  text-decoration: inherit;
-}
-.rsvp:hover{
-  background-color: rgba(255,255,255,0.3);
-  cursor: pointer;
-}
-.bg_cont{
-  top: 0;
-  left: 0;
-  position: absolute;
-  background-color: rgba(100, 100, 100, 0.476);
-  z-index: 110;
-  height: 100%;
-  width: 100%;
-}
-.bg_wrapper{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1;
 }
 
-small{
-  font-size: calc(1vw + 20px);
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
-  color: #111;
+.reg-item{
+  margin: 15px;
 }
 
-.op1{
-  background: url(../img/dn_main.JPG) no-repeat center center; 
-  height: 100%;
-  width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-.sec-wrapper{
-  width: 100%;
-  height: 100%;
-}
-
-.section{
-  height: 100%;
-  width: 100%;
-  display:flex;
-  flex-direction: column;
-  justify-content:center;
-  align-items:center;
-}
-
-.sect_text{
-  width: 100%;
-  height: 100%;
-  background: url(../img/wedding_4.jpg) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.sect{
-  height: 100%;
-  width: 50%;
-  float: left;
-}
-
-h1{
-  font-size: calc(1.6vw + 30px);
-  margin: 0;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
-  color: #111;
-  margin-bottom: -15px;
+.reg-content{
+  display: flex;
+  align-items: baseline;
+  height: max-content;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 25px auto;
 }
 
 h2{
-  font-size: calc(1.11vw + 20px);
-  margin: 0;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 200;
-  color: #111; 
-  margin-top: 0px;
-}
-
-.picture1{
-  height: 100%;
-  width: 100%;
-}
-
-.h2_cont{
-  margin-top: 45px;
-}
-
-.rsvp_wrap{
   margin: 0 auto;
+  padding-top: 25px;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 400;
+  border-bottom: #333 solid 1px;
+  width: fit-content;
+  font-size: calc(2.2vw + 30px);
+  color: #333;
+  text-transform: uppercase;
+}
+
+.content_title > p{
+  width: 80%;
+  margin: 15px auto;
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 29px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
 }
 h3{
-  margin: 0px;
-  font-size: calc(.7vw + 15px);
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
-  color: #111;
-
-}
-
-.pic1{
-  background: url("../img/dn_swiss.jpg") no-repeat center center; 
-  background-size: cover;
-}
-
-.pic2{
-  background: url("../img/dn_dl.jpg") no-repeat center center; 
-  background-size: cover;
-}
-
-.sect_text_wrap{
-  height: 100%;
-  width: 100%;
-  text-align: center;
-  display:flex;
-  flex-direction: column;
-  justify-content:center;
-  align-items:center;
-}
-
-.sec_header{
-  margin-bottom: 15px;
-  font-size: calc(1.11vw + 30px);
-  font-family: 'Dancing Script', cursive;
-  font-weight: 100;
-  color: #111;
-}
-
-.sect_content_post{
-  text-transform: uppercase;
-  background-color: rgba(255,201,201, 0.35);
-  border: 1px solid #333;
-  min-width: 400px;
-  width: 70%;
-  border-radius: 2px;
-  box-shadow: 5px 6px 23px -4px #000000;
-}
-
-.sect_content_post_reg{
-  text-transform: uppercase;
-  min-width: 400px;
-  width: 70%;
-}
-
-.reg_head{
+  font-size: 30px;
+  width: fit-content;
+  margin: 30px auto;
   border-bottom: 1px solid #333;
-  width: 400px;
-}
-
-.reg_a{
-  border-bottom: #333 1px solid;
-  transition: .3s color linear;
-}
-
-.reg_a:hover{
-  color: rgb(27, 27, 81);
-  font-weight: 300;
-}
-
-h5{
   font-family: 'Montserrat', sans-serif;
-  font-weight: 200;
-  font-size: calc(.6vw + 20px);
-  letter-spacing: 2px;
-  margin: 4px;
+  font-weight: 700;
+  color: #021834;
+}
+#event_p{
+  text-align: justify;
+  font-size: 23px;
+  letter-spacing: normal;
+  text-justify: inter-word;
+}
+
+.section_title{
+  text-align: center;
+  margin-top: 25px;
+  border-radius: 20px;
+  width: calc(75%);
+  padding-top: 75px;
+  padding-bottom: 25px;
+  min-width: 250px;
+  background-color: rgba(0, 0, 0, 0.15);
+  border: 1px solid #F9F9F9;
+}
+.section_rsvp{
+  border: 1px solid #F9F9F9;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  color: #F9F9F9;
+  letter-spacing: 8px;
+  font-size: 40px;
+  font-weight: 100;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 300px;
+  background-color: rgba(0, 0, 0, 0.15);
+  height: 65px;
+  text-align: center;
+  line-height: 65px;
+}
+h1{
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  font-size: calc(3.4vw + 25px);
+  color: #F9F9F9;
+  margin: 0;
+}
+#jackson{
+  float: right;
+  margin: 0;
+  width: 80%;
+  color: #F9F9F9;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+  font-size: 12px;
+}
+#date{
+  margin-top: 50px;
+  margin-bottom: -15px;
+  font-size: calc(1.8vw + 15px);
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  width: fit-content;
+  color: #F9F9F9;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 100;
+}
+a{
+  color: inherit;
+  display:inline-block;
+  width: 100%;
+  height: 100%;
+  text-decoration: inherit;
+}
+a:hover{
+  background-color: rgba(255,255,255,0.05);
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 1151px) {
-  .testing{
+  .section_fifty{
+    width: 50%;
     height: 100%;
-    width: 100%;
+  }
+  .section_fifty > img{
+    display: none;
   }
 }
 
 @media only screen and (max-width: 1150px) {
-  .testing{
-    height: 100%;
-    width: 100%;
-    margin: auto;
+  .nav_spacer{
+    height: 60%;
   }
-  .sect{
-    height: 50%;
-    width: 100%;
+  .flex_content_wrap{
+    flex-direction: column;
+    height: fit-content;
+    overflow: auto;
   }
-
-  .sec-wrapper2{
-    display:flex;
+  .wrap_reverse{
     flex-direction: column-reverse;
   }
-
-  .title_cont{
-    padding: 25px;
+  .section_fifty{
+    width: 100%;
+    height: 50%;
   }
-
-  .nav_spacer{
-    height: 500px;
-  }
-  .nav_wrap{
-    margin-bottom: 15px;
-  }
-
-  #date{
-    margin-bottom: 0px;
+  .section_fifty > img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
 
 }
 
-.vsm{
-  font-size: 35px !important;
+
+
+
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 0 auto;
+  padding: 0;
+  width: 60%;
+}
+
+#one{
+  background: url(../img/dn_main.JPG) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .form_text{
@@ -322,7 +251,6 @@ h5{
 .form_cont{
   margin-top: 50px;
 }
-
 
 .email_form{
   margin-bottom: 30px;
@@ -343,13 +271,42 @@ label{
   display: inline-block;
 }
 
-#contact_container{
-  background: url("../img/wedding_form.jpg") no-repeat center center; 
+.tn_img{
+  width: 10vw;
+  border-radius: 5px;
+  min-width: 150px;
+  min-height: 150px;
+  object-fit: cover;
+  height: 10vw;
 }
 
-.tn{
-  height: 200px;
-  width: 200px;
+.reg-item{
+  display: flex;
+  max-width: 10vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  min-width: 175px;
+  height: auto;
+}
+
+.reg-item > a:hover{
+  transform: scale(1.3);
+}
+
+.reg-item > a{
+  transition: .2s all ease;
+}
+
+.reg-item > div{
+  margin-bottom: 5px;
+}
+
+#rsvp{
+  background: url("../img/wedding_form.jpg") no-repeat center center; 
 }
 
 .submit_form{
@@ -396,249 +353,3 @@ input:focus{
   margin: 0 auto;
   border-bottom: 1px solid #333;
 }
-
-
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-  resize: vertical;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden,
-[hidden] {
-  display: none !important;
-}
-
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
-
-.sr-only {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
-}
-
-/*
- * Extends the .sr-only class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.sr-only.focusable:active,
-.sr-only.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
-}
-
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-  visibility: hidden;
-}
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix::before,
-.clearfix::after {
-  content: " ";
-  display: table;
-}
-
-.clearfix::after {
-  clear: both;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-
-@media print {
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-
-  a[href]::after {
-    content: " (" attr(href) ")";
-  }
-
-  abbr[title]::after {
-    content: " (" attr(title) ")";
-  }
-
-  /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
-    content: "";
-  }
-
-  pre {
-    white-space: pre-wrap !important;
-  }
-
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
-  /*
-   * Printing Tables:
-   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
-   */
-  thead {
-    display: table-header-group;
-  }
-
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
-}
-
