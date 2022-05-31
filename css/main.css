@@ -40,14 +40,14 @@ html,body{
   background-color: #E9F4FB;
 }
 #bg1{
-  background: url(../img/dn_swiss.JPG) no-repeat center center; 
+  background: url(../img/dn_swiss.jpg) no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 #bg2{
-  background: url(../img/dn_dl.JPG) no-repeat center center; 
+  background: url(../img/dn_dl.jpg) no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
