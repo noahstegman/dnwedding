@@ -175,7 +175,7 @@ a:hover{
   cursor: pointer;
 }
 
-@media only screen and (min-width: 1151px) {
+@media only screen and (min-width: 1381px) {
   .section_fifty{
     width: 50%;
     height: 100%;
@@ -188,7 +188,7 @@ a:hover{
   }
 }
 
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1380px) {
   .nav_spacer{
     height: 60%;
   }
