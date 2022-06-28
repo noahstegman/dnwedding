@@ -47,7 +47,7 @@ html,body{
   background-size: cover;
 }
 #bg2{
-  background: url(../img/dn_dl.jpg) no-repeat center center; 
+  background: url(../img/dn_alt.jpg) no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -97,6 +97,16 @@ h3{
   width: fit-content;
   margin: 30px auto;
   border-bottom: 1px solid #333;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #021834;
+}
+h4{
+  font-size: 22px;
+  letter-spacing: 2px;
+  width: fit-content;
+  margin: 10px auto;
+  text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   color: #021834;
