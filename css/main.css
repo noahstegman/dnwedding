@@ -362,17 +362,18 @@ input[type="checkbox"] {
   visibility: hidden;
 }
 input[type="checkbox"]:checked + label {
-  background-color: rgb(15, 48, 55);
+  transition: all 0.2s ease-in-out;
+  background-color: rgba(246, 213, 213, 0.482);
 }
 input[type="checkbox"]:checked + label:before {
   transform: translateX(245px);
-  background-color: rgb(175, 234, 248);
+  background-color: rgb(160, 106, 106);
 }
 .label_check {
   display: flex;
   width: 300px;
   height: 45px;
-  border: 2px solid;
+  border: 1px solid;
   border-radius: 99em;
   position: relative;
   transition: transform 0.75s ease-in-out;
@@ -386,7 +387,7 @@ input[type="checkbox"]:checked + label:before {
   position: absolute;
   width: 30px;
   height: 30px;
-  background-color: rgb(15, 48, 55);
+  background-color: rgba(194, 140, 140, 0.716);
   border-radius: 50%;
   top: 7px;
   left: 12px;
