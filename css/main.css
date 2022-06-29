@@ -358,6 +358,40 @@ input:focus{
 
 }
 
+input[type="checkbox"] {
+  visibility: hidden;
+}
+input[type="checkbox"]:checked + label {
+  background-color: rgb(15, 48, 55);
+}
+input[type="checkbox"]:checked + label:before {
+  transform: translateX(245px);
+  background-color: rgb(175, 234, 248);
+}
+.label_check {
+  display: flex;
+  width: 300px;
+  height: 45px;
+  border: 2px solid;
+  border-radius: 99em;
+  position: relative;
+  transition: transform 0.75s ease-in-out;
+  transform-origin: 50% 50%;
+  cursor: pointer;
+}
+.label_check:before {
+  transition: transform 0.75s ease;
+  content: "";
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: rgb(15, 48, 55);
+  border-radius: 50%;
+  top: 7px;
+  left: 12px;
+}
+
 .rsvp_text{
   font-size: 60px;
   font-family: 'Dancing Script', cursive;
@@ -365,4 +399,22 @@ input:focus{
   width: 200px;
   margin: 0 auto;
   border-bottom: 1px solid #333;
+}
+#rsvp_check{
+  margin-bottom: 20px;
+  display: inline-block;
+  text-align: center;
+  width: 300px;
+}
+#yesnoid{
+  margin-top: 15px;
+}
+.form_text_yn{
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  letter-spacing: 2px;
+  width: 50%;
+  font-weight: 700;
+  float: left;
 }
